@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigationi"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ramizbek.aliyev.trafficrule.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_qoshishQoydaFragment"
+            app:destination="@id/qoshishQoydaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/likeFragment"
+        android:name="ramizbek.aliyev.trafficrule.LikeFragment"
+        android:label="fragment_like"
+        tools:layout="@layout/fragment_like" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="ramizbek.aliyev.trafficrule.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="ramizbek.aliyev.trafficrule.TestFragment"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test" />
+    <fragment
+        android:id="@+id/qoshishQoydaFragment"
+        android:name="ramizbek.aliyev.trafficrule.QoshishQoydaFragment"
+        android:label="fragment_qoshish_qoyda"
+        tools:layout="@layout/fragment_qoshish_qoyda" />
+
+</navigation>
